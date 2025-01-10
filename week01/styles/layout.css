@@ -1,0 +1,16 @@
+.ex5 header{
+    padding: 2rem;
+    grid-column: 1/4;
+}
+
+.ex5 .left-side{
+    grid-column: 2/3;
+}
+
+.ex5 .right-side{
+    grid-column: 3/4;
+}
+
+ex5 footer{
+    grid-column: 1/4;
+}
