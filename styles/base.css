@@ -69,14 +69,14 @@ main {
 
 .about-header{
   background-color: rgb(135, 179, 233);
-  max-width: space-around;
+  max-width: 100%;
   text-align: center;
   color: white;
 }
 
 .dev-header{
   background-color: rgb(135, 179, 233);
-  max-width: space-around;
+  max-width: 100%;
   text-align: center;
   color: white;
 }
@@ -111,7 +111,6 @@ main {
   list-style: none;
   padding: 0;
   text-align: center;
-  text-wrap: center;
 }
 
 #second-card ul li {
