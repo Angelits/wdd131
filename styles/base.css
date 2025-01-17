@@ -1,121 +1,147 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Nunito Sans", Arial, sans-serif; 
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #91bded;
-  }
-  
-  /* Header */
-  header {
-    background-color: #a1abf9; 
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
 
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  
+header {
+  background-color: #7295ed;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
 
-  .card {
-   position: relative;
-  }
-  
-  .card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .card img {
-    max-width: 200px;
-    border-radius: 10px;
-    margin-left: 20px;
-    height: auto;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
 
-  img {
-    float: right;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: rgb(155, 198, 241);
+  
+}
 
-  .ca{
-    float: left;
-    margin: 20px;
-  }
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-around; 
+  align-items: stretch; 
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  border: 2px solid #84b1e8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%; 
   
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
   
-  footer {
-    background-color: #89b4f0;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-  }
-  
-  footer p {
-    margin: 0.5rem 0;
-  }
-  
-  footer #currentyear {
-    font-weight: bold;
-  }
-  
-  
-  @media (max-width: 768px) {
-    main {
-      grid-template-columns: 1fr; 
-    }
-  
-    header h1 {
-      font-size: 1.5rem;
-    }
-  
-    header nav {
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-  }
+}
+.cali{
+  text-align: center;
+}
+
+.about-header{
+  background-color: rgb(135, 179, 233);
+  max-width: space-around;
+  text-align: center;
+  color: white;
+}
+
+.dev-header{
+  background-color: rgb(135, 179, 233);
+  max-width: space-around;
+  text-align: center;
+  color: white;
+}
+
+
+#first-card {
+  display: block; 
+}
+
+#first-card .me img {
+  max-width: 150px;
+  max-height: 140px;
+  display: block;
+  margin: 10px; 
+  float: right;
+}
+
+#first-card img.ca {
+  display: block;
+  margin: 10px; 
+  max-width: 200px;
+  float: left;
+
+}
+
+#first-card p {
+  margin-top: 1rem;
+}
+
+
+#second-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  text-wrap: center;
+}
+
+#second-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+#second-card ul li a {
+  text-decoration: none;
+  color: #7f9ef5;
+  font-weight: 600;
+}
+
+#second-card ul li a:hover {
+  text-decoration: underline;
+
+}
+
+/* Footer styles */
+footer {
+  background-color: #7da4f3;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+
   
