@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #cbcddc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-direction: column;
+    background: #cbcddc; 
+    width: 100%;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 20px;
+}
+.navigation.show {
+    display: flex;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: none;
+    }
+
+    #menu {
+        display: none; 
+    }
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-grid figure {
+    margin: 0;
+}
+
+.image-grid img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #cbcddc;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
