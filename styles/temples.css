@@ -22,6 +22,10 @@ h1 {
     padding: 2rem;
 }
 
+h2{
+    text-align: center;
+}
+
 nav {
     flex-grow: 1;
 }
