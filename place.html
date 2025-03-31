@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A webpage about Switzerland, including data and weather details.">
     <meta name="author" content="Angela Ordaz">
-    <title>Switzerland</title>
+    <title>Switzerland Travel Guide</title>
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <header>
         <h1>Switzerland</h1>
     </header>
-
+    <main>
     <div class="hero">
         <picture>
             <source srcset="images/swissCow.webp" media="(min-width: 768px)">
             <img src="images/verticalCow.webp" alt="Swiss Cow">
         </picture>
     </div>
-
     <div class="content">
         <div class="card">
             <h2>Data</h2>
@@ -33,7 +33,6 @@
             <p><strong>Calling Code:</strong> +41</p>
             <p><strong>Internet TLD:</strong> .ch</p>
         </div>
-
         <div class="card">
             <h2>Weather</h2>
             <img src="images/weather.svg" alt="weather icon">
@@ -43,7 +42,7 @@
             <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span>°C</p>
         </div>
     </div>
-
+    </main>
     <footer>
         <p>&copy; <span id="year"></span> Switzerland / Angela Sofia Ordaz Narvaez</p>
         <p>Last Modified: <span id="last-modified"></span></p>
