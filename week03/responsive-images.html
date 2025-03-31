@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- Large image for screens 1000px and wider -->
+                <source media="(min-width: 1000px)" srcset="./images/hero-large.webp">
+                
+                <!-- Medium image for screens 500px to 999px -->
+                <source media="(min-width: 500px)" srcset="./images/hero-medium.webp">
+
+                <!-- Small image for screens smaller than 500px -->
+                <source media="(max-width: 499px)" srcset="./images/hero-small.webp">
+                
+                <!-- Default fallback image -->
+                <img src="./images/hero-small.webp" alt="Beautiful temple image" width="1500" height="750">

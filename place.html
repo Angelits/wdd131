@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage about Switzerland, including data and weather details.">
+    <meta name="author" content="Angela Ordaz">
+    <title>Switzerland</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Switzerland</h1>
+    </header>
+
+    <div class="hero">
+        <picture>
+            <source srcset="images/swissCow.webp" media="(min-width: 768px)">
+            <img src="images/verticalCow.webp" alt="Swiss Cow">
+        </picture>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 41,290 sq km</p>
+            <p><strong>Population:</strong> 8,637,000</p>
+            <p><strong>Capital:</strong> Bern</p>
+            <p><strong>Languages:</strong> German, French, Italian, Romansh</p>
+            <p><strong>Currency:</strong> Swiss Franc (CHF)</p>
+            <p><strong>Time Zone:</strong> UTC+1</p>
+            <p><strong>Calling Code:</strong> +41</p>
+            <p><strong>Internet TLD:</strong> .ch</p>
+        </div>
+
+        <div class="card">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather icon">
+            <p><strong>Temperature:</strong> <span id="temperature">10</span>°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind-speed">5</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span>°C</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Switzerland / Angela Sofia Ordaz Narvaez</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

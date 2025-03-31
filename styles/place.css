@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #005F73;
+    --secondary-color: #0A9396;
+    --background-color: #94D2BD;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+h2{
+    font-size: 2rem; 
+  font-weight: bold;
+  color: #333; 
+  text-align: center; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  margin: 20px 0; 
+  padding: 10px 0; 
+  background-color: #9ce1f4; 
+  border-radius: 10px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+h2:hover {
+    color: #2c3e50; 
+    cursor: pointer; 
+  }
+
+.hero {
+    position: relative;
+    height: 50vh;
+    background: url("images/swissCow.webp") no-repeat center/cover;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin: 15px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.weather-icon {
+    display: block;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: auto;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url("images/swissCow.webp");
+        background-size: cover;
+    }
+
+
+    .hero picture {
+        display: none;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: -50px auto 0;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
