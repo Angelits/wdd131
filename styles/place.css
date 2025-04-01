@@ -1,15 +1,13 @@
 :root {
     --primary-color: #005F73;
-    --secondary-color: #0A9396;
-    --background-color: #94D2BD;
+    --secondary-color: #03415b;
+    --background-color: #94bcd2;
     --text-color: #333;
 }
 
 body {
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
-    color: var(--text-color);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -25,16 +23,16 @@ header {
 
 h2{
     font-size: 2rem; 
-  font-weight: bold;
-  color: #333; 
-  text-align: center; 
-  text-transform: uppercase; 
-  letter-spacing: 2px; 
-  margin: 20px 0; 
-  padding: 10px 0; 
-  background-color: #9ce1f4; 
-  border-radius: 10px; 
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    font-weight: bold;
+    color: #333; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin: 20px 0; 
+    padding: 10px 0; 
+    background-color: #9ce1f4; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 h2:hover {
