@@ -2,7 +2,7 @@
     --primary-color: #005F73;
     --secondary-color: #03415b;
     --background-color: #94bcd2;
-    --text-color: #333;
+    --text-color: #000000;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 header {
     
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1em;
 }
@@ -24,7 +24,7 @@ header {
 h2{
     font-size: 2rem; 
     font-weight: bold;
-    color: #333; 
+    color: #0000; 
     text-align: center; 
     text-transform: uppercase; 
     letter-spacing: 2px; 
