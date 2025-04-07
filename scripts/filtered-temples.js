@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { templeName: "Layton Utah Temple", location: "Utah, United States", dedicated: "2016, June, 16", area: 93539, imageUrl: "https://i.pinimg.com/736x/22/bc/4d/22bc4d129def6aa6347ea3476c48950d.jpg" }
     ];
   
+    
     function displayTemples(filteredTemples) {
       gallery.innerHTML = "";
   
