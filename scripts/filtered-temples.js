@@ -5,19 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll("nav a");
   
     const temples = [
+      {templeName: "Aba Nigeria", location: "Aba, Nigeria", dedicated: "2005, August, 7", area: 11500, imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"},
+      {templeName: "Manti Utah", location: "Manti, Utah, United States", dedicated: "1888, May, 21", area: 74792, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"},
+      {templeName: "Payson Utah", location: "Payson, Utah, United States", dedicated: "2015, June, 7", area: 96630, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"},
+      {templeName: "Yigo Guam", location: "Yigo, Guam", dedicated: "2020, May, 2", area: 6861, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"},
+      {templeName: "Washington D.C.", location: "Kensington, Maryland, United States", dedicated: "1974, November, 19", area: 156558, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"},
+      {templeName: "Lima Perú", location: "Lima, Perú", dedicated: "1986, January, 10", area: 9600, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"},
+      {templeName: "Mexico City Mexico", location: "Mexico City, Mexico", dedicated: "1983, December, 2", area: 116642, imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"},
       { templeName: "Taylorsville Utah", location: "Taylorsville, Utah", dedicated: "2024, June, 4", area: 43560, imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/taylorsville-utah-temple/taylorsville-utah-temple-44959-main.jpg" },
       { templeName: "Orem Utah", location: "Orem, Utah", dedicated: "2024, January, 21", area: 67388, imageUrl: "https://i.pinimg.com/736x/f3/44/74/f3447408bd863cefb964be09434516ce.jpg" },
-      { templeName: "Salt Lake Temple", location: "Salt Lake City, Utah", dedicated: "1893, April, 6-24", area: 382207, imageUrl: "https://i.pinimg.com/736x/e0/24/20/e024203034b730ad809ec0ec1173c2c2.jpg" },
-      { templeName: "San Diego", location: "San Diego, California", dedicated: "1993, April, 25-30", area: 72000, imageUrl: "https://i.pinimg.com/736x/85/39/89/853989ae6fdcdf48ff77f786f8e88fac.jpg" },
-      { templeName: "Washington D.C.", location: "Kensington, Maryland", dedicated: "1974, November, 19", area: 156558, imageUrl: "https://i.pinimg.com/736x/e0/55/16/e0551622ba7b900cf12e7e6ac654eadf.jpg" },
-      { templeName: "Nauvoo Illinois", location: "Illinois, United States", dedicated: "2002, June, 27-309", area: 54000, imageUrl: "https://i.pinimg.com/736x/97/5b/6c/975b6c54a12e359f9547c9ca56c988a2.jpg" },
       { templeName: "Provo City Center", location: "Utah, United States", dedicated: "2016, March, 20", area: 85084, imageUrl: "https://i.pinimg.com/736x/93/4f/b8/934fb87f892d84f9c173123d3579838e.jpg" },
-      { templeName: "Saratoga Springs", location: "Utah, United States", dedicated: "2023, August, 13", area: 97836, imageUrl: "https://i.pinimg.com/736x/76/df/38/76df384182c181bb8a8db00199a121af.jpg" },
-      { templeName: "Mount Timpanogos", location: "Utah, United States", dedicated: "1996, October, 13-16", area: 107240, imageUrl: "https://i.pinimg.com/736x/84/55/de/8455dee5bb384c5ca86acc811be79d18.jpg" },
-      { templeName: "Oakland California", location: "California, United States", dedicated: "1964, November, 17-19", area: 80157, imageUrl: "https://i.pinimg.com/736x/8c/e1/1f/8ce11f82fcbca093759139139f91a759.jpg" },
-      { templeName: "Draper Utah Temple", location: "Utah, United States", dedicated: "2009, March, 20-22", area: 58300, imageUrl: "https://i.pinimg.com/736x/be/83/45/be83455338e6c04d3e63cbb833105ef2.jpg" },
-      { templeName: "Layton Utah Temple", location: "Utah, United States", dedicated: "2016, June, 16", area: 93539, imageUrl: "https://i.pinimg.com/736x/22/bc/4d/22bc4d129def6aa6347ea3476c48950d.jpg" }
     ];
+
   
     
     function displayTemples(filteredTemples) {
