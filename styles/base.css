@@ -128,6 +128,76 @@ main {
 
 }
 
+
+.wfl fieldset{
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: .5rem 2%;
+
+}
+
+.wfl legend{
+  color: #0000ff;
+  padding: 0 .5rem;
+}
+
+.wfl label{
+  display: block;
+  padding-top: 1rem;
+  padding-top: #ff0000;
+  font-size: .9rem
+}
+
+.wfl div{
+  padding-top: 1rem;
+  color: #0000ff;
+  font-size: .9rem;
+}
+
+.wfl input[type="text"],
+.wfl input[type="tel"],
+.wfl input[type="email"],
+.wfl input[type="url"],
+.wfl input[type="date"],
+.wfl select,
+.wfl input[type="number"]
+{
+  background-color: #eee;
+  display:block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+}
+
+.wfl input[type="radio"],
+.wfl input[type="checkbox"]{
+  margin-right: 6px;
+}
+
+.wfl input[type="submit"]{
+  border: none;
+  background-image: linear-gradient(#ff0000, #a70505);
+  color: #fff;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 96%;
+  max-width: 400px;
+  margin-top: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+.wfl input:required {
+  border-right: #ff0000;
+}
+
+.wfl input:required:valid{
+  border-right: #008000;
+}
+
 /* Footer styles */
 footer {
   background-color: #7da4f3;

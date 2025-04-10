@@ -41,6 +41,42 @@
                 <li><a class="link" href="https://www.udemy.com/" target="_blank">Udemy</a></li>
             </ul>
         </section>
+        <form method="get" action="thanks.html" class="wfl">
+                <fieldset>
+                    <legend>Aplicant information</legend>
+                    <label>First Name*<input type="text"  name="fname" required></label>
+                    <label>Last Name*<input type="text"  name="lname" required></label>
+                    <label>Phone<input type="tel"  name="phone" placeholder="1111235555"></label>
+                    <label>Email<input type="email"  name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Website<input type="url"  name="url" placeholder="http:://"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Information</legend>
+                    <div>Audience</div>
+                    <label><input type="radio" name="audience" value="beginner"> Beginner</label>
+                    <label><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                    <label><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                    <div>Software Needed</div>
+                    <label><input type="checkbox" name="editing" value="yes"> Photo editing</label>
+                    <label><input type="checkbox" name="code" value="yes"> Coding</label>
+                    <label><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                    <label><input type="checkbox" name="client" value="yes"> FTP Client</label>
+
+                    <fieldset>
+                        <legend>Funding</legend>
+                        <label>Anticipated Compeltion Date <input type="date" name="completedDate"></label>
+                        <label>Course Subject <select name="subject"> 
+                            <option value="">Please Select</option>
+                            <option value="software">Software Development</option></select></label>
+                    </fieldset>
+
+                    <label>How many authors? <input type="number" name="Authors"></label>
+                </fieldset>
+                <input type="submit" value="propose my course">
+
+        </form>
     </main>
         <footer id="footer">
         <p>&copy; <span id="currentyear"></span> Angela Ordaz Narváez, California</p>

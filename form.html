@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description" content="An html form creation/practice">
+    <meta name="author" content="Angela Ordaz">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <title>Html product review form</title>
+</head>
+<body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+  
+    <main>
+        <form method="get" action="review.html?submitted=true">
+        
+        <label for="productName">Product Name:</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+          
+        </select>
+  
+        <!-- Overall Rating -->
+        <fieldset>
+          <legend>Overall Rating:</legend>
+          <label><input type="radio" name="rating" id="rate1" value="1" required> ☆</label>
+          <label><input type="radio" name="rating" id="rate2" value="2"> ☆☆</label>
+          <label><input type="radio" name="rating" id="rate3" value="3"> ☆☆☆</label>
+          <label><input type="radio" name="rating" id="rate4" value="4"> ☆☆☆☆</label>
+          <label><input type="radio" name="rating" id="rate5" value="5"> ☆☆☆☆☆</label>
+        </fieldset>
+  
+        <!-- Date of Installation -->
+        <label for="installDate">Date of Installation:</label>
+        <input type="date" id="installDate" name="installDate" required />
+  
+        <!-- Useful Features -->
+        <fieldset>
+          <legend>Useful Features (Check all that apply):</legend>
+          <label><input type="checkbox" id="feature1" name="features" value="Durability"> Durability</label>
+          <label><input type="checkbox" id="feature2" name="features" value="Design"> Design</label>
+          <label><input type="checkbox" id="feature3" name="features" value="Ease of Use"> Ease of Use</label>
+          <label><input type="checkbox" id="feature4" name="features" value="Battery Life"> Battery Life</label>
+        </fieldset>
+  
+        <!-- Written Review -->
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review" rows="5" cols="40" placeholder="Write your review here..."></textarea>
+  
+        <!-- User Name -->
+        <label for="userName">Your Name (optional):</label>
+        <input type="text" id="userName" name="userName" />
+  
+        <!-- Submit -->
+        <input type="submit" value="Send Review" />
+      </form>
+    </main>
+  
+    <footer>
+      <p>&copy; <span id="year"></span> | Angela Ordaz Narvaez | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+  
+  </body>
+  </html>
