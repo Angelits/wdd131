@@ -8,14 +8,22 @@ function updateYear() {
   }
   
   //Mobile navigation functionality//
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
-  const arrowIcon = document.querySelector(".arrow-icon");
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const arrowIcon = toggleBtn.querySelector(".arrow-icon");
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-    arrowIcon.textContent = navLinks.classList.contains("show") ? "︽" : "︾";
-  });
+    toggleBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+
+        // Change the icon based on whether the menu is open or closed
+        if (navLinks.classList.contains("show")) {
+            arrowIcon.innerHTML = '<i class="fas fa-times"></i>'; // Close icon
+        } else {
+            arrowIcon.innerHTML = '<i class="fas fa-bars"></i>'; // Hamburger icon
+        }
+    });
+});
   
    //Carousel elements//
   let currentIndex = 0;
