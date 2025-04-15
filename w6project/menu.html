@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amphawa Thai Noodle House</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles/menu.css" />
+  <script src="scripts/menu.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    
+    <div class="logo">
+      <img src="images/amphawa-logo.jpg" alt="Amphawa Logo" />
+    </div>
+
+    <button id="menuToggle" class="menu-toggle">
+      <span class="arrow-icon">&#9660;</span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="site.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about-us.html">About us</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+
+</header>
+
+  <main>
+    <h1 class="menu-t">Menu: </h1>
+    <div>
+      <select id="sectionSelect" class="menu-dropdown">
+        <option value="">Click here to go to a section</option>
+        <option value="#Favorites">Favorites</option>
+        <option value="#Appetizers">Appetizers</option>
+        <option value="#Salads">Salads</option>
+        <option value="#Fried-Rice">Fried Rice</option>
+        <option value="#Stir-Fried-Noodles">Stir Fried Noodles</option>
+        <option value="#Soups">Soups</option>
+        <option value="#Curry">Curry</option>
+        <option value="#Beverages">Beverages</option>
+        <option value="#Desserts">Desserts</option>
+      </select>
+    </div>
+        <!-- Row 1 -->
+    <div class="image-section">
+      <h2 id="Favorites" class="row-subtitle">Favorites</h2>
+      <div class="image-row">
+        <div class="image-card">
+          <img src="images/kao-ka-prow.jpg" alt="Image 1" loading="lazy">
+          <h3>Kao Ka Prow</h3>
+          <p>sauteed crispy pork belly with chili, onions, bell peppers and basil over rice...$18</p>
+        </div>
+        <div class="image-card">
+          <img src="images/kao-ka-tod.jpg" alt="Image 2" loading="lazy">
+          <h3>Kao Ka Tod</h3>
+          <p>fried pork over rice with sweet and sour sauce...$15</p>
+        </div>
+        <div class="image-card">
+          <img src="images/beef-tango.jpg" alt="Image 3" loading="lazy">
+          <h3>Beef Tango</h3>
+          <p>Sautéed rib eye with fresh mango, onion, and bell pepper...$26</p>
+        </div>
+      </div>
+  </div>
+
+        <!-- Row 2 -->
+        <div class="image-section">
+            <h2 id="Appetizers"    class="row-subtitle">Appetizers</h2>
+            <div class="image-row">
+              <div class="image-card">
+                <img src="images/chicken-satay.jpg" alt="Image 1" loading="lazy">
+                <h3>Chicken Satay</h3>
+                <p>strips of chicken meat marinated with spices, barbecued on skewers served with peanut sauce and cucumber salad...$15</p>
+              </div>
+              <div class="image-card">
+                <img src="images/pod pier pak.webp" alt="Image 2" loading="lazy">
+                <h3>Por Pier Pak</h3>
+                <p>deep fried egg rolls stuffed with silver noodles and vegetables served with sweet and sour sauce...$14</p>
+              </div>
+              <div class="image-card">
+                <img src="images/tofu-tod.avif" alt="Image 3" loading="lazy">
+                <h3>Tofu Tod</h3>
+                <p>deep fried tofu served with sweet & sour sauce and ground peanuts...$13</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="image-section">
+            <h2 id="Salads" class="row-subtitle">Salads</h2>
+            <div class="image-row">
+              <div class="image-card">
+                <img src="images/mango-salad.webp" alt="Image 1" loading="lazy">
+                <h3>Mango Salad</h3>
+                <p>shredded mango with fresh shrimps, onions, chili, mint, cilantro, cashew nuts, dried coconut and spicy lime dressing...$17</p>
+              </div>
+              <div class="image-card">
+                <img src="images/yum-pla-muk.jpg" alt="Image 2" loading="lazy">
+                <h3>Yum Pla Muk</h3>
+                <p>squid salad with onions, chili, ginger and cilantro in lemon dressing...$18</p>
+              </div>
+              <div class="image-card">
+                <img src="images/pla-koong.webp" alt="Image 3" loading="lazy">
+                <h3>Pla Koong</h3>
+                <p>shrimps salad with chili, onions, lemon grass, mint leaves and lemon dressing...$19</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="image-section">
+          <h2 id="Fried-Rice" class="row-subtitle">Fried Rice</h2>
+            <div class="image-row">
+              <div class="image-card">
+                <img src="images/pineapple-rice.jpg" alt="Image 1" loading="lazy">
+                <h3>Pineapple Fried Rice</h3>
+                <p>fried rice mixed with pineapple, eggs, cashew nuts, raisins, carrots...$18</p>
+              </div>
+              <div class="image-card">
+                <img src="images/shrimp-fried-rice.jpg" alt="Image 2" loading="lazy">
+                <h3>Shrimp Fried Rice</h3>
+                <p>thai-style fried rice shrimp paste with shrimps, egg, chinese broccoli, onions and chili...$18</p>
+              </div>
+              <div class="image-card">
+                <img src="images/khao-pad-gang-keow.jpg" alt="Image 3" loading="lazy">
+                <h3>Khao Pad Gang Keow</h3>
+                <p>spicy fried rice with green curry paste, string bean, bamboo shoots, bell peppers, basil, and chili with your choice of meat...$19</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="image-section">
+          <h2 id="Stir-Fried-Noodles" class="row-subtitle">Stir Fried Noodles</h2>
+            <div class="image-row">
+              <div class="image-card">
+                <img src="images/pad-se-ew.jpg" alt="Image 1" loading="lazy">
+                <h3>Pad Se Ew</h3>
+                <p>stir-fried flat rice noodles, egg, and Chinese broccoli with choice of meat...$17</p>
+              </div>
+              <div class="image-card">
+                <img src="images/chan-pad-po.jpg" alt="Image 2" loading="lazy">
+                <h3>Chan Pad Poo</h3>
+                <p>stir-fried spicy thai noodles with dungeness crab meat, egg and green onions...$23</p>
+              </div>
+              <div class="image-card">
+                <img src="images/pad-kee-maow.webp" alt="Image 3" loading="lazy">
+                <h3>Pad Kee Mao</h3>
+                <p>stir-fried flat rice noodles with onions, chili, Chinese broccoli, jalapeno, and fresh basil with choice of ...$19</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="image-section">
+            <h2 id="Soups" class="row-subtitle">Soups</h2>
+            <div class="image-row">
+              <div class="image-card">
+                <img src="images/tom-youm.webp" alt="Image 1" loading="lazy">
+                <h3>Tom Youm</h3>
+                <p>hot and sour prawn soup with tomatoes, lemongrass, mushrooms, onions and galangal...$20</p>
+              </div>
+              <div class="image-card">
+                <img src="images/gang jerd woon sen.jpg" alt="Image 2" loading="lazy">
+                <h3>Gang Jerd Woon</h3>
+                <p>silver noodles with ground pork, tofu and assorted vegetables soup. Vegetarian option also available...$19</p>
+              </div>
+              <div class="image-card">
+                <img src="images/wonton.jpg" alt="Image 3" loading="lazy">
+                <h3>Wonton</h3>
+                <p>minced pork and shrimp wontons served with roasted pork and vegetable...$17</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="image-section">
+            <h2 id="Curry" class="row-subtitle">Curry</h2>
+            <div class="image-row">
+              <div class="image-card">
+                <img src="images/gang-panang-nuer.webp" alt="Image 1" loading="lazy">
+                <h3>Gang Panang Nuer</h3>
+                <p>beef in medium panang curry with bell peppers and fresh basil...$23</p>
+              </div>
+              <div class="image-card">
+                <img src="images/gang gai khao.jpg" alt="Image 2" loading="lazy">
+                <h3>Gang Gai Khao</h3>
+                <p>Spicy chicken curry with jalapeños...$20</p>
+              </div>
+              <div class="image-card">
+                <img src="images/pumpkin curry.jpg" alt="Image 3" loading="lazy">
+                <h3>Pumpkin Curry</h3>
+                <p>medium red curry sauce with pumpkin, bell peppers, and fresh basil with choice of meat/tofu...$22</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Row 8 -->
+        <div class="image-section">
+          <h2 id="Beverages" class="row-subtitle">Beverages</h2>
+          <div class="image-row">
+            <div class="image-card">
+              <img src="images/coke.jpg" alt="Image 1" loading="lazy">
+              <h3>Coke, sprite and sodas</h3>
+              <p>glass of Soda...$4</p>
+            </div>
+            <div class="image-card">
+              <img src="images/lemonade.webp" alt="Image 2" loading="lazy">
+              <h3>Lemonade</h3>
+              <p>glass of fresh lemonade...$4</p>
+            </div>
+            <div class="image-card">
+              <img src="images/sparkling water.jpg" alt="Image 3" loading="lazy">
+              <h3>Sparkling water</h3>
+              <p>glass of Sparkling water...$4</p>
+            </div>
+          </div>
+      </div>
+        
+        <!-- Row 9 -->
+        <div class="image-section">
+            <h2 id="Desserts" class="row-subtitle">Desserts</h2>
+            <div class="image-row">
+              <div class="image-card">
+                <img src="images/coconut ice cream.webp" alt="Image 1" loading="lazy">
+                <h3>Coconut ice cream</h3>
+                <p>3 scoops of coconut ice cream...$6</p>
+              </div>
+              <div class="image-card">
+                <img src="images/roti.jpg" alt="Image 2" loading="lazy">
+                <h3>Roti</h3>
+                <p>classic Thai dessert made of tapioca and sweets...$6</p>
+              </div>
+              <div class="image-card">
+                <img src="images/fried banana.webp" alt="Image 3" loading="lazy">
+                <h3>Fried banana with ice cream</h3>
+                <p>crispy fried banana with vanilla ice cream...$6</p>
+              </div>
+            </div>
+        </div>
+        
+      
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Amphawa Thai Noodle House</p>
+    <p>contact@amphawa.com</p>
+  </footer>
+
+</body>
+</html>

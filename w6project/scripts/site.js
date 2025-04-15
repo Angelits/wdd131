@@ -7,23 +7,18 @@ function updateYear() {
     }
   }
   
-  //Mobile navigation functionality//
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
-    const arrowIcon = toggleBtn.querySelector(".arrow-icon");
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
 
-    toggleBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+  menuToggle.classList.toggle('open');
 
-        // Change the icon based on whether the menu is open or closed
-        if (navLinks.classList.contains("show")) {
-            arrowIcon.innerHTML = '<i class="fas fa-times"></i>'; // Close icon
-        } else {
-            arrowIcon.innerHTML = '<i class="fas fa-bars"></i>'; // Hamburger icon
-        }
-    });
+  const arrowIcon = menuToggle.querySelector('.arrow-icon');
+  arrowIcon.innerHTML = menuToggle.classList.contains('open') ? '&#9650;' : '&#9660;';
 });
+
+
   
    //Carousel elements//
   let currentIndex = 0;
@@ -49,7 +44,6 @@ function updateYear() {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
   }
-
 
   setInterval(autoSlide, 3000); 
 
@@ -93,4 +87,7 @@ function updateYear() {
       }, 3000);
     });
   });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last updated: ${document.lastModified}`;
   

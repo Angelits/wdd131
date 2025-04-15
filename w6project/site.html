@@ -12,21 +12,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
+  <header class="navbar">
+    
       <div class="logo">
         <img src="images/amphawa-logo.jpg" alt="Amphawa Logo" />
       </div>
-      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
-        <span class="arrow-icon"><i class="fas fa-bars"></i></span> <!-- Hamburger Icon -->
+
+      <button id="menuToggle" class="menu-toggle">
+        <span class="arrow-icon">&#9660;</span>
       </button>
+
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="site.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="ourstory.html">About us</a></li>
-        <li><a href="#location">Location</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li><a href="site.html#location">Location</a></li>
       </ul>
-    </nav>
+  
   </header>
   <main>
     <div class="carousel">
@@ -57,7 +59,7 @@
       <h2>Food Gallery</h2>
       <div id="gallery-container" class="gallery-grid"></div>
     </section>
-    <section class="location">
+    <section id="location" class="location">
         <h2>Location</h2>
         <div class="location-container">
           <!-- Map (you can embed a Google Map or use an image for now) -->

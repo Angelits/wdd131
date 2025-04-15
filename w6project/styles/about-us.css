@@ -1,0 +1,242 @@
+:root {
+    --brown: #8d340a;
+    --orange: #f8832f;
+    --white: #ffffff;
+    --black: #000000;
+    --font-title: 'Fira Sans', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    color: var(--black);
+  }
+  
+  button, input, textarea {
+    font-family: var(--body-font);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; 
+    background-color: var(--orange);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100vw; 
+    margin: 0; 
+    box-sizing: border-box; 
+  }
+
+  /*Navigation properties*/
+  /* Navigation container */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8832f;
+  padding: 10px 40px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+  margin-top: 5px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  justify-content: center;
+  
+}
+
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: large;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--black);
+  left: 0;
+  bottom: -4px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.nav-links li a:hover::after {
+  transform: scaleX(1);
+}
+
+
+.spacer {
+  width: 100%;
+}
+
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-toggle .arrow-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+}
+
+
+.menu-toggle.open .arrow-icon {
+  transform: rotate(180deg); 
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  
+  .menu-toggle {
+    display: block;
+  }
+
+  
+  .desktop-nav {
+    display: none;
+  }
+
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    gap: 15px;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #f8832f;
+    text-align: center;
+    z-index: 999;
+    padding: 1rem 0;
+  }
+
+  
+  .nav-links.show {
+    display: flex;
+  }
+
+  
+  .nav-links li {
+    margin: 8px 0; 
+  }
+
+  .nav-links li a {
+    display: inline-block;
+    position: relative;
+    padding: 8px 0; 
+    font-weight: 500;
+    font-size: 1rem; 
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  /* Underline animation for nav links */
+  .nav-links li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+    left: 0;
+    bottom: -4px;
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease; 
+  }
+
+  
+  .nav-links li a:hover::after {
+    transform: scaleX(1); 
+  }
+}
+
+.about-us {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 30px;
+  }
+  
+  .section-flex img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .text-content {
+    flex: 1 1 400px;
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--black);
+    text-align: left;
+  }
+  
+  .text-content p {
+    font-size: 1.1rem;
+    color: var(--black);
+    line-height: 1.6;
+    text-align: left;
+  }
+
+/*footer content*/
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--orange);
+    font-family: var(--font-body);
+  }
